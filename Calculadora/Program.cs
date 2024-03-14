@@ -23,9 +23,17 @@ namespace Calculadora
                 Console.WriteLine("Digite 5 para sair:");
 
                 string operação = Console.ReadLine();                
+               if (operação!= "1"|| operação!= "2"|| operação!= "3"|| operação!="4"|| operação!="5") {
+                    Console.WriteLine("Operação Invalida");
+                    Console.ReadLine();
+                    continue;
+                }
                 if (operação == "5")
                     break;              
-               Console.WriteLine("Digite o primerio número:");
+               
+                
+                
+                Console.WriteLine("Digite o primerio número:");
                            
                 string n1str = Console.ReadLine();
                 decimal n1int = Convert.ToDecimal(n1str);
@@ -35,6 +43,7 @@ namespace Calculadora
                 decimal n2int = Convert.ToDecimal(n2str);
                 decimal resultado = 0;
                 if (operação == "1")
+               
                 {
                     resultado = n1int + n2int;
 
